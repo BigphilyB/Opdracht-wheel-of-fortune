@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <form id="form" onsubmit="return false;">
+        <input type="number" id="userInput" />
+        <input type="submit" onclick="othername();" />
+    </form>
+    <span id=cheat>Stop on this number</span>
+<button id=spin onclick="myVar = setTimeout(checkNumbers, 5000)">Spin</button><br>
+<canvas id="canvas" width=300 height=300></canvas>
+<p><input type="button" value="Nieuwe spin" onClick="refresh(this)"></p>
+<script>
+    function refresh(){
+          window.location.reload("Refresh")
+        }
+  </script>
+<script src="script.js"></script>
+</body>
+</html>
+
